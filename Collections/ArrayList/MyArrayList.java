@@ -3,7 +3,7 @@ public class MyArrayList {
   private int pointer = 0;
 
   public MyArrayList() {
-    list = new int[5];
+    list = new int[10];
   }
 
   public void add(int value) {
@@ -25,6 +25,17 @@ public class MyArrayList {
       }
       pointer--;
     }
+  }
+
+  public void insertAt(int value, int index){
+
+    for(int i = index; i < size() + 1; i++){ 
+       int next = list[i]; 
+       list[i] = value;
+       value = next; 
+    }
+    pointer++;
+
   }
 
   public int getIndex(int value) {
@@ -57,5 +68,5 @@ public class MyArrayList {
   }
 
   // insertAt
-  
+   
 }

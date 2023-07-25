@@ -9,7 +9,7 @@ public class main{
         list.add(5);
         list.add(6); 
 
-        list.remove(2);
+        list.insertAt(8, 3);
         
         
        System.out.println(list.size());
