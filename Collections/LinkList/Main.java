@@ -11,7 +11,8 @@ public class Main {
         cars.add("Mazda");
         cars.add("I20");
         cars.removeLast();
-
+        cars.addFirst("jeep");
+        cars.addLast("pikup");
         System.out.println(cars);
         System.out.println(cars.getLast());
         cars.set(3, "forchunur");
